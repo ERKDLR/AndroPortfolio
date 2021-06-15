@@ -1,0 +1,231 @@
+.AboutMeBannerContainer {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.AboutMeBannerTextContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 1300px;
+  margin-right: var(--spacer-m);
+  padding-top: var(--spacer-m);
+}
+
+.AboutMeBannerTextContainer::before {
+  width: 75%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  top: 0px;
+  right: 0px;
+  background-color: var(--blue-1);
+}
+
+.AboutMeBannerText {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--spacer-zero);
+  font-weight: 200;
+  position: relative;
+  letter-spacing: -2px
+}
+
+.AboutMeBannerText::after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: 0px;
+  height: 3px;
+  width: 100px;
+  background-color: var(--bodytext);
+  transform: translateY(40px);
+}
+
+.AboutMeBannerTextMain {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--spacer-zero);
+  font-weight: bold;
+  letter-spacing: -2px
+}
+
+.AboutMeTitleContainer {
+  position: relative;
+  margin: var(--spacer-l) auto 60px auto;
+  display: flex;
+  justify-content: center;
+  max-width: 1300px;
+}
+
+.AboutMeTitleContainer::after {
+  width: 300px;
+  height: 1px;
+  background: var(--bodytext);
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  transform: translateY(20px);
+}
+
+.AboutMeTitle {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: var(--spacer-zero);
+}
+
+.AboutMeContainer {
+  width: 100%;
+  display: flex;
+  margin: var(--spacer-m) auto;
+  flex-direction: column;
+  max-width: 1300px;
+}
+
+.AboutMeImageLeft {
+  min-width: 130px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+.AboutMeImageRight {
+  min-width: 130px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+.AboutMeTextContainer {
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  padding: var(--spacer-m);
+  background-color: var(--background);
+}
+
+.SkillContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.SkillGraphicContainer {
+  height: 210px;
+  width: 210px;
+  border: var(--bodytext) 1px solid;
+  margin: var(--spacer-s) var(--spacer-zero);
+}
+
+.PathContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  grid-gap: 20px;
+  margin-bottom: var(--spacer-l);
+}
+
+.PathEntryContainer {
+  height: 100px;
+  width: 100%;
+  padding: var(--spacer-s);
+}
+
+.AboutMeTextAbstract {
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: var(--spacer-l);
+}
+
+.AboutMeText {
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: var(--spacer-zero);
+}
+
+.AboutMeTextBold {
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: var(--spacer-zero);
+  font-weight: bold;
+}
+
+.AboutMeTextAlt {
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: var(--spacer-zero);
+  font-size: 15px;
+  font-style: italic;
+}
+
+.EducationContainer {
+  margin-bottom: var(--spacer-m);
+}
+
+@media (min-width: 414px) {
+  .AboutMeBannerText {
+    font-size: 32px;
+  }
+  .AboutMeBannerTextMain {
+    font-size: 32px;
+  }
+  .AboutMeBannerText {
+    font-size: var(--text-3xl);
+  }
+  .AboutMeBannerTextMain {
+    font-size: var(--text-3xl);
+  }
+  .AboutMeBannerContainer {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .AboutMeBannerContainer {
+    height: auto;
+    width: 100%;
+  }
+  .AboutMeImageLeft {
+    min-width: 430px;
+  }
+  .AboutMeImageRight {
+    min-width: 430px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .AboutMeBannerText {
+    font-size: var(--text-6xl);
+  }
+  .AboutMeBannerTextMain {
+    font-size: var(--text-6xl);
+  }
+  .AboutMeBannerText::after {
+    width: 350px;
+  }
+  .AboutMeBannerContainer {
+    height: auto;
+    width: 100%;
+  }
+  .AboutMeImageLeft {
+    margin-right: var(--spacer-m);
+  }
+  .AboutMeImageRight {
+    margin-left: var(--spacer-m);
+  }
+  .AboutMeContainer {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 2000px) {
+
+}

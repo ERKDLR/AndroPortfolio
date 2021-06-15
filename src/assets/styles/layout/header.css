@@ -1,0 +1,130 @@
+.header {
+  background-color: var(--white);
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  min-width: 100vw;
+}
+
+.headerLogo {
+  font-size: 36px;
+  font-family: var(--font-1);
+  text-decoration: unset;
+  font-weight: 900;
+  color: var(--bodytext);
+}
+
+.headerLogo:hover {
+  color: var(--green-5);
+  transition: .3s;
+}
+
+.headerMenuIcon {
+  height: 44px;
+  width: 44px;
+  border: var(--bodytext) 2px solid;
+}
+
+.headerNavIcon {
+  color: var(--white);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  color: var(--blue-3);
+}
+
+.headerNavIcon:hover {
+  opacity: .8;
+  transition: .3s;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  color: var(--bodytext);
+  transform: translateY(3px);
+}
+
+.icon:hover {
+  color: var(--blue-3);
+  transition: .3s;
+}
+
+.NavModal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  display: none;
+  background: 	rgba(77, 77, 77, .95);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ModalActive .NavModal {
+  display: flex;
+}
+
+.nav {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.NavItem {
+  font-size: var(--text-l);
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-right: var(--spacer-zero);
+}
+
+.ModalCloseIcon {
+  color: var(--white);
+  position: absolute;
+  top: 20px;
+  cursor: pointer;
+  right: 40px;
+  background: rgba(255, 255, 255, 0);
+  height: 40px;
+  width: 40px;
+  border: none;
+}
+
+.ModalCloseIcon:hover {
+  opacity: .8;
+  transition: .3s;
+}
+
+.ModalIcon {
+  transform: translateY(3px);
+}
+
+@media (min-width: 414px) {
+  .NavItem {
+    font-size: var(--text-2xl);
+  }
+}
+
+@media (min-width: 768px) {
+  .NavItem {
+    font-size: var(--text-4xl);
+  }
+}
+
+@media (min-width: 1440px) {
+  .ModalCloseIcon {
+    height: 50px;
+    width: 50px;
+  }
+}

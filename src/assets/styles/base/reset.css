@@ -1,0 +1,62 @@
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+iframe,
+video,
+audio {
+  max-width: 100%;
+  border: 0;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: initial;
+  font-family: var(--font-1);
+}
+
+p {
+  margin-top: 0;
+  line-height: initial;
+  font-family: var(--font-1);
+  font-weight: 400;
+  color: var(--bodytext);
+  white-space: inherit;
+}
+
+a {
+  text-decoration: unset;
+  font-family: var(--font-1);
+  font-weight: 400;
+  color: var(--bodytext);
+}
+
+button {
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: var(--text-2xl);
+}
+
+i {
+  color: var(--bodytext);
+}

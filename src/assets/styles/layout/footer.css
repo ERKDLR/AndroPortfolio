@@ -1,0 +1,60 @@
+.footer {
+  background-color: var(--white);
+  height: 260px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+  position: relative;
+}
+
+.footerLogo {
+  font-size: 36px;
+  font-family: var(--font-1);
+  text-decoration: unset;
+  font-weight: 900;
+  position: relative;
+  color: var(--bodytext);
+  width: 200px;
+  text-align: center;
+}
+
+.footerLogo::after {
+  height: 1px;
+  width: 200px;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  background-color: var(--bodytext);
+  content: "";
+  transform: translateY(20px);
+}
+
+.footerContactContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerContact {
+  font-size: 18px;
+  font-family: var(--font-2);
+  text-decoration: unset;
+  font-weight: lighter;
+  position: relative;
+  margin-bottom: 5px;
+  color: var(--bodytext);
+  width: 200px;
+  text-align: center;
+}
+
+.LineA {
+  position: absolute;
+  right: 40px;
+  height: 200px;
+}
+
+.LineB {
+  position: absolute;
+  left: 40px;
+  height: 200px;
+}

@@ -1,0 +1,23 @@
+<div class="header">
+
+  <a href="http://localhost:8080" class="headerLogo">ANDRO</a>
+  <!-- <a href="" class="headerMenuIcon"></a> -->
+  <button class="headerNavIcon">
+    <i class="icon" data-feather="menu"></i>
+  </button>
+</div>
+<div class="NavModal">
+  <button class="ModalCloseIcon" type="button" name="button">
+    <i class="ModalIcon" data-feather="x"></i>
+  </button>
+  {% set navPages = collections.all | eleventyNavigation %}
+    <div class="nav">
+      {%- for elemento in navPages %}
+        <a class="NavItem" href="{{ elemento.url | url }}"
+          {% if elemento.url == page.url %} class="active"{% endif %}
+        >
+          {{ elemento.title }}
+        </a>
+      {%- endfor %}
+    </div>
+</div>

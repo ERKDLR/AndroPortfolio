@@ -1,0 +1,31 @@
+---
+layout: layouts/base.njk
+title: Inicio
+eleventyNavigation:
+  key: index
+  title: Home
+---
+<div class="MarginContainer">
+  <div class="bannerContainer">
+    <div class="bannerImage">
+      <img src="assets/images/invictusalt.png" alt="">
+    </div>
+    <div class="bannerLinkContainer">
+      <a class="bannerLink" href="http://localhost:8080/work/">WORK</a>
+      <a class="bannerLink" href="http://localhost:8080/cv/">ABOUT ME</a>
+      <a class="bannerLink" href="http://localhost:8080/contact/">CONTACT & WORK ENQUIRIES</a>
+    </div>
+  </div>
+
+  <div class="sectionIndex">
+    {% for element in sections %}
+    <a class="SectionContainer">
+      <p class="{{element.class}}">{{element.name}}</p>
+      <div class="SectionImage">
+        <img class="SectionImageAlign" src="/assets/images/{{element.image}}" alt="">
+      </div>
+      <button class="sectionButton" onclick="window.location.href='/{{element.buttonLink}}'" type="button" name="button">{{element.button}}</button>
+    </a>
+    {% endfor %}
+  </div>
+</div>

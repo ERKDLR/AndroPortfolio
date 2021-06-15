@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+title: Work
+eleventyNavigation:
+  key: work
+  title: Work
+  order: 2
+---
+
+<div class="MarginContainer">
+  <div class="WorkContainer">
+    <h1 class="WorkTitle">WORK</h1>
+    <p class="WorkText">The following gallery contains some of my digital illustration
+    projects, some of my influences are music, video games, streetart, tatto and
+    streetwear, elements that I have mixed until I get my style, I always try to
+    continue evolving to improve the way of create the illustrations and get more
+    dinamic and enveloping images, I hope you like it.</p>
+    <div class="GalleryGrid">
+      {% for element in illustrationsg %}
+        {% include "components/projectIllustrations.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+html {
+  /* Variables de espaciado */
+  --white: #FFFFFF;
+  --black: #000000;
+  --bodytext: #4D4D4D;
+  --background-l: #fdfdfc;
+  --background: #F4F4F4;
+  --background-d: #e9e5cc;
+
+  --green-1: #f7fbed;
+  --green-2: #ecf4d2;
+  --green-3: #e0edb7;
+  --green-4: #d4e69c;
+  --green-5: #daeaa9;
+
+  --blue-1: #9ac9cb;
+  --blue-2: #78b7ba;
+  --blue-3: #56a5a9;
+  --blue-4: #458487;
+  --blue-5: #346365;
+
+  --red-1: #e07c75;
+  --red-2: #da6259;
+  --red-3: #d13a2f;
+  --red-4: #a82e25;
+  --red-5: #7e231c;
+
+  --orange-1: #fdb799;
+  --orange-2: #fd9467;
+  --orange-3: #fc7035;
+  --orange-4: #fa4d04;
+  --orange-5: #c83d03;
+
+  --yellow-1: #f5c482;
+  --yellow-2: #f1ae53;
+  --yellow-3: #ed9824;
+  --yellow-4: #cd7e11;
+  --yellow-5: #9e610d;
+
+  --Selected-blue: #3a65ff;
+
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "WORK",
+    "image": "daftpunk.jpg",
+    "buttonLink": "work",
+    "button": "Explore",
+    "class": "SectionTitle"
+  },
+  {
+    "name": "ABOUT ME",
+    "image": "taf.jpg",
+    "buttonLink": "cv",
+    "button": "Read",
+    "class": "SectionTitle"
+  }
+]
