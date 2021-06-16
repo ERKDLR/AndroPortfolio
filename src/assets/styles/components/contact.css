@@ -11,7 +11,7 @@
   height: auto;
   font-size: 36px;
   font-weight: 900;
-  margin: var(--spacer-m) auto var(--spacer-lg) auto;
+  margin: var(--spacer-m) auto var(--spacer-l) auto;
 }
 
 .ContactGridContainer {
