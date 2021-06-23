@@ -1,5 +1,23 @@
 [
   {
+    "name": "Devil",
+    "type": "Vertical",
+    "image": "devil3.jpg",
+    "caption": "Caption #20"
+  },
+  {
+    "name": "Lone Boys Social Club",
+    "type": "Vertical",
+    "image": "banca.jpg",
+    "caption": "Caption #20"
+  },
+  {
+    "name": "Citio",
+    "type": "Vertical",
+    "image": "Citio.jpg",
+    "caption": "Caption #20"
+  },
+  {
     "name": "Baseball",
     "type": "Vertical",
     "image": "36.jpg",
