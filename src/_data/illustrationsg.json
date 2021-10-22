@@ -1,33 +1,88 @@
 [
   {
+    "name": "Bunny",
+    "type": "Vertical",
+    "image": "45.jpg",
+    "caption": "Caption #34"
+  },
+  {
+    "name": "K.O.",
+    "type": "Vertical",
+    "image": "44.jpg",
+    "caption": "Caption #33"
+  },
+  {
+    "name": "Keep Moving",
+    "type": "Vertical",
+    "image": "43.jpg",
+    "caption": "Caption #32"
+  },
+  {
+    "name": "Arcade",
+    "type": "Vertical",
+    "image": "42.jpg",
+    "caption": "Caption #31"
+  },
+  {
+    "name": "Wos",
+    "type": "Vertical",
+    "image": "41.jpg",
+    "caption": "Caption #30"
+  },
+  {
+    "name": "Lil Miquela",
+    "type": "Vertical",
+    "image": "40.jpg",
+    "caption": "Caption #29"
+  },
+  {
+    "name": "Beanie",
+    "type": "Vertical",
+    "image": "39.jpg",
+    "caption": "Caption #28"
+  },
+  {
+    "name": "I ain't got time",
+    "type": "Vertical",
+    "image": "38.jpg",
+    "caption": "Caption #27"
+  },
+  {
+    "name": "Adult Swim",
+    "type": "Vertical",
+    "image": "37.jpg",
+    "caption": "Caption #26"
+  },
+
+  {
     "name": "Devil",
     "type": "Vertical",
     "image": "devil3.jpg",
-    "caption": "Caption #20"
+    "caption": "Caption #25"
   },
   {
     "name": "Lone Boys Social Club",
     "type": "Vertical",
     "image": "banca.jpg",
-    "caption": "Caption #20"
+    "caption": "Caption #24"
   },
   {
     "name": "Citio",
     "type": "Vertical",
     "image": "Citio.jpg",
-    "caption": "Caption #20"
+    "caption": "Caption #23"
   },
   {
     "name": "Baseball",
     "type": "Vertical",
     "image": "36.jpg",
-    "caption": "Caption #20"
+    "caption": "Caption #22"
   },
   {
     "name": "Baseball Proceso",
     "type": "Vertical",
     "image": "35.jpg",
-    "caption": "Caption #20"
+    "caption": "Caption #21"
   },
   {
     "name": "Poses 2",

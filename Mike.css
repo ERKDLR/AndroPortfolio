@@ -1,0 +1,410 @@
+.header {
+  background-color: white;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  min-width: 100vw;
+}
+
+.headerLogo {
+  font-size: 36px;
+  font-family: Roboto;
+  text-decoration: unset;
+  font-weight: 900;
+  color: #000;
+}
+
+.headerLogo:hover {
+  color: green;
+  transition: .3s;
+}
+
+.headerMenuIcon {
+  height: 44px;
+  width: 44px;
+  border: #000 2px solid;
+}
+
+.headerNavIcon {
+  color: white;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  color: blue;
+}
+
+.headerNavIcon:hover {
+  opacity: .8;
+  transition: .3s;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  color: #000;
+  transform: translateY(3px);
+}
+
+.icon:hover {
+  color: blue;
+  transition: .3s;
+}
+
+.NavModal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  display: none;
+  background: 	rgba(77, 77, 77, .95);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ModalActive .NavModal {
+  display: flex;
+}
+
+.nav {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.NavItem {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-right: 0px;
+}
+
+.ModalCloseIcon {
+  color: white;
+  position: absolute;
+  top: 20px;
+  cursor: pointer;
+  right: 40px;
+  background: rgba(255, 255, 255, 0);
+  height: 40px;
+  width: 40px;
+  border: none;
+}
+
+.ModalCloseIcon:hover {
+  opacity: .8;
+  transition: .3s;
+}
+
+.ModalIcon {
+  transform: translateY(3px);
+}
+
+@media (min-width: 414px) {
+  .NavItem {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .NavItem {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .ModalCloseIcon {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.bannerContainer {
+  border: #000 3px solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.bannerAsideContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+.bannerTitleContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.bannerTitle {
+  font-size: 60px;
+  font-weight: 900;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+
+.bannerText {
+  font-size: 24px;
+  font-family: Roboto;
+  color: #fff;
+  text-decoration: unset;
+  max-width: 280px;
+  width: 100%;
+  text-align: center;
+  font-weight: lighter;
+  white-space: inherit;
+  background: blue;
+  padding: 0px 10px;
+}
+
+.bannerLinkContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding-left:  20px;
+  z-index: 5;
+  position: relative;
+}
+
+.bannerLinkContainer::after {
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  content: "";
+  background-color: #000;
+}
+
+.bannerLink {
+  font-size: 24px;
+  text-decoration: unset;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.bannerLink:hover {
+  color: blue;
+  transition: .3s;
+}
+
+.bannerImage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.sectionIndex {
+  height: auto;
+  margin-top: 40px;
+  background-color: yellow;
+}
+
+.SectionContainer {
+  display: flex;
+  flex-direction: row;
+  padding-left: 60px;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.SectionTitle {
+  font-size: 48px;
+  color: #000;
+  position: absolute;
+  font-weight: bolder;
+  bottom: 0px;
+  left: 0px;
+  margin-bottom: 0px;
+  transform: rotate(270deg) translateY(15px) translateX(-15px);
+  transform-origin: 0 0;
+}
+
+.SectionImage {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.SectionImageAlign {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  object-fit: cover;
+}
+
+.sectionButton {
+  width: 180px;
+  height: 44px;
+  background: #000;
+  border-radius: 0 30px 30px 30px;
+  border: #fff 0px solid;
+  bottom: 20px;
+  margin-top: auto;
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  right: 20px;
+}
+
+.sectionButton:hover {
+  background: orange;
+  transition: .3s;
+}
+
+.sectionButton:active {
+  opacity: 1;
+  transition: .3s;
+  transform: scale(0.95);
+}
+
+@media (min-width: 414px) {
+  .bannerTitle {
+    font-size: 76px;
+  }
+  .bannerText {
+    font-size: 30px;
+  }
+  .bannerLink {
+    font-size: 30px;
+  }
+  .bannerLinkContainer {
+    margin-left: 40px;
+    margin-bottom: 40px;
+    padding-left:  40px;
+  }
+  .bannerTitleContainer {
+    margin-left: 40px;
+  }
+  .bannerLink {
+    min-width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sectionButton {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .SectionImage {
+    height: 150vh;
+  }
+  .bannerTitle {
+    font-size: 96px;
+  }
+  .bannerText {
+    font-size: 36px;
+    max-width: 340px;
+  }
+  .bannerContainer {
+    position: relative;
+  }
+  .bannerLinkContainer {
+    position: absolute;
+    bottom: 0px;
+  }
+  .SectionContainer {
+    padding-left: 80px;
+  }
+  .SectionTitle {
+    font-size: 64px;
+    transform: rotate(270deg) translateY(20px) translateX(-15px);
+  }
+  .bannerLink {
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 2000px) {
+  .SectionImage {
+    height: 150vh;
+  }
+  .bannerLink {
+    font-size: 64px;
+  }
+}
+
+.footer {
+  background-color: white;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+  position: relative;
+}
+
+.footerLogo {
+  font-size: 36px;
+  font-family: Roboto;
+  text-decoration: unset;
+  font-weight: 900;
+  position: relative;
+  color: #000;
+  width: 200px;
+  text-align: center;
+}
+
+.footerLogo::after {
+  height: 1px;
+  width: 200px;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  background-color: #000;
+  content: "";
+  transform: translateY(20px);
+}
+
+.footerContactContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerContact {
+  font-size: 18px;
+  font-family: Roboto;
+  text-decoration: unset;
+  font-weight: lighter;
+  position: relative;
+  margin-bottom: 5px;
+  color: #000;
+  width: 200px;
+  text-align: center;
+}
+
+.LineA {
+  position: absolute;
+  right: 40px;
+  height: 200px;
+}
+
+.LineB {
+  position: absolute;
+  left: 40px;
+  height: 200px;
+}
